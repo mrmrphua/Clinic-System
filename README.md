@@ -6,4 +6,4 @@ Phua Teck Wai,
 Chin Wei Seng,
 Tan Yan Kai,
 Ng Hong Yao,
-Lim Yi Kun,
+Lim Yi Kun
