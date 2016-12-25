@@ -1,15 +1,38 @@
 package last;
 
-import javax.swing.JOptionPane;
-import ui.*;
-
 public class PatientValidate {
     private String msg = "";
     private int c=0, d=0, e=0;
+    private final String name,ic, address,phone,age,email;
+ 
     
     public PatientValidate(String name, String ic,String address,String phone,String age,String email) throws InvalidException{
   
+        this.name = name;
+        this.ic = ic;
+        this.address = address;
+        this.phone = phone;
+        this.age = age;
+        this.email = email;
+        
+        CheckName();
+         
+        CheckIC();
+        
+        CheckAddress();
+        
+        CheckPhone();
+        
+        CheckAge();
+        
+        CheckEmail();
+        
+    }    
+
+    public String CheckName() throws InvalidException {
         //check name
+        
+        msg = "";
         if(name == null || name.equals("")){
             msg += "Please enter your NAME, cannot be empty.\n";
         }
@@ -39,8 +62,16 @@ public class PatientValidate {
             }
         }
         
-         
+        if(!msg.equals("")){
+            throw new InvalidException(msg);
+        }
+        else
+            return "Correct";
+    }    
+
+    public String CheckIC() throws InvalidException {
         //Check ic
+        msg = "";
         if(ic == null || ic.equals("")){
             msg += "Please enter ic.\n";
         }
@@ -68,8 +99,16 @@ public class PatientValidate {
            
         }
         
-        
+        if(!msg.equals("")){
+            throw new InvalidException(msg);
+        }
+        else
+            return "Correct";
+    }    
+
+    public String CheckAddress() throws InvalidException {
         //check address
+        msg = "";
         if(address == null || address.equals("")){
             msg += "Please enter your ADDRESS, cannot be empty.\n";
         }
@@ -91,9 +130,18 @@ public class PatientValidate {
             if(address.length()>50){
                 msg += "Address too long.\n";
             }
-        }
+        }   
         
-         //Check phone
+        if(!msg.equals("")){
+            throw new InvalidException(msg);
+        }
+        else
+            return "Correct";
+    }    
+
+    public String CheckPhone() throws InvalidException {
+        //Check phone
+        msg = "";
         if(phone == null || phone.equals("")){
             msg += "Please enter phone number.\n";
         }
@@ -121,7 +169,16 @@ public class PatientValidate {
            
         }
         
-          //Check age
+        if(!msg.equals("")){
+            throw new InvalidException(msg);
+        }
+        else
+            return "Correct";
+    }    
+
+    public String CheckAge() throws InvalidException {
+        //Check age
+        msg = "";
         if(age == null || age.equals("")){
             msg += "Please enter age.\n";
         }
@@ -148,8 +205,16 @@ public class PatientValidate {
             }
            
         }
-        
+        if(!msg.equals("")){
+            throw new InvalidException(msg);
+        }
+        else
+            return "Correct";
+    }    
+
+    public String CheckEmail() throws InvalidException {
         //check email
+        msg = "";
         if(email == null || email.equals("")){
             msg += "Please enter your Email, cannot be empty.\n";
         }
@@ -172,11 +237,12 @@ public class PatientValidate {
                 msg += "Email too long.\n";
             }
         }
-
-             if(!msg.equals("")){
+        
+        if(!msg.equals("")){
             throw new InvalidException(msg);
         }
-        
+        else
+            return "Correct";
     }    
-        
+         
 }
