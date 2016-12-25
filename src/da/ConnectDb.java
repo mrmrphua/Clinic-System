@@ -5,7 +5,7 @@ import java.sql.*;
 import javax.swing.*;
 
 public class ConnectDb {
-    private String host = "jdbc:derby://localhost:1527/test";
+    private String host = "jdbc:derby://localhost:1527/test1";
     private String user = "haha";
     private String password = "hihi";
     private Connection conn;
