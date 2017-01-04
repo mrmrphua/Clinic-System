@@ -162,6 +162,7 @@ public class LoginPage extends javax.swing.JFrame {
     private void LoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LoginActionPerformed
           String name = "abc";
         String pass = "12";
+        //Testing
         
         
         
