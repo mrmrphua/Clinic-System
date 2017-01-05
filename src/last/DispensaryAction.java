@@ -41,6 +41,7 @@ public class DispensaryAction extends javax.swing.JFrame {
     }
     
         private void clearTextDispensarycreate(){
+           
            CreateDispensaryName.setText("");
            CreateDispensaryName1.setText("");
            CreateUnitPrice.setText("");
