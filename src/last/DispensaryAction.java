@@ -38,6 +38,7 @@ public class DispensaryAction extends javax.swing.JFrame {
         DispensaryUpdate();
         DispensaryDelete();
         retrieveDispensaryTable();
+        
     }
     
         private void clearTextDispensarycreate(){
