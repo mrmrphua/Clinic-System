@@ -47,6 +47,7 @@ public class DispensaryAction extends javax.swing.JFrame {
            CreateQuantity.setText("");         
  }
     
+        
   public void dispensaryCount(){
               DispensaryDetails = dispensaryConnection.getProgrammes();
           for(int i=0; i<DispensaryDetails.size(); i++){     
