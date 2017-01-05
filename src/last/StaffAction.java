@@ -41,7 +41,8 @@ public class StaffAction extends javax.swing.JFrame {
         retrieveStaffTable();
     }
 
-   public void staffCount(){
+   
+    public void staffCount(){
             programmies = staffConnection.getProgrammes();
                 for(int i=0; i<programmies.size(); i++){     
              if(programmies.get(i).getSid().startsWith("S")){
