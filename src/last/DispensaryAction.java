@@ -27,6 +27,7 @@ public class DispensaryAction extends javax.swing.JFrame {
     public ArrayList<DatabaseDispensary> DispensaryDetails;
     private String[] disId;
   
+    
     public DispensaryAction() {
         initComponents();
         setLocationRelativeTo(null);
