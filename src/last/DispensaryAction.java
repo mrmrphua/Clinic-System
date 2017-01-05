@@ -19,6 +19,7 @@ import javax.swing.table.DefaultTableModel;
 import ui.Menu;
 
 
+
 public class DispensaryAction extends javax.swing.JFrame {
      ConnectDb db = new ConnectDb(); 
       private Connection conn;
