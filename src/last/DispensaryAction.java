@@ -703,6 +703,7 @@ public class DispensaryAction extends javax.swing.JFrame {
 
     private void ADaddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ADaddActionPerformed
         try{
+            
             DispensaryValidate valid = new DispensaryValidate (CreateDispensaryName.getText(),CreateUnitPrice.getText(),CreateQuantity.getText());
             String message = "Dispensary ID: "+CreateDispensaryID.getText();
             message+= "\nDispensary Name: "+CreateDispensaryName.getText();
