@@ -20,6 +20,7 @@ import ui.LoginPage;
 import ui.Menu;
 
 
+
 public class AdminAction extends javax.swing.JFrame {
      ConnectDb db = new ConnectDb(); 
       private Connection conn;
