@@ -36,6 +36,7 @@ public class AdminAction extends javax.swing.JFrame {
         dispensaryCount();
         DispensaryUpdate();
         retrieveAdminTable();
+   
     }
     
         private void clearTextDispensarycreate(){
