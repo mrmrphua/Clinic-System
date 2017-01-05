@@ -711,6 +711,7 @@ public class DispensaryAction extends javax.swing.JFrame {
             message+= "\nUnit Price: "+"RM"+CreateUnitPrice.getText();
             message+="\nQuantity:"+CreateQuantity.getText();
 
+            
             message+="\n\nIs the information correct?";
             int returnVal = JOptionPane.showConfirmDialog(null, message, "Check Information", JOptionPane.YES_NO_OPTION);
             if(returnVal == JOptionPane.YES_OPTION){
