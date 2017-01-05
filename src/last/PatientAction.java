@@ -32,6 +32,7 @@ public class PatientAction extends javax.swing.JFrame {
        private String bloodchg;
        private String[] patId;
    
+       
     public PatientAction() {
         initComponents();
         setTitle("Patient's Information");
