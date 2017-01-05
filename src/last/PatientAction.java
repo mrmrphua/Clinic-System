@@ -1,4 +1,5 @@
 
+
 package last;
 
 import da.ConnectDb;
@@ -16,6 +17,7 @@ import java.util.Vector;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 import ui.Menu;
+
 
 
 public class PatientAction extends javax.swing.JFrame {
