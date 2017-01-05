@@ -1,4 +1,5 @@
 
+
 package ui;
 
 import da.ConnectAdmin;
@@ -19,6 +20,7 @@ public class LoginPage extends javax.swing.JFrame {
       private Connection conn;
     public ArrayList<DatabaseAdmin> adminDetails;
     private ConnectAdmin adminConnection;
+    
     
     public LoginPage() {
         initComponents();
